@@ -5,58 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css -->
     <link href="style.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/89d7b06fb8.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
+    <script src="https://kit.fontawesome.com/89d7b06fb8.js" crossorigin="anonymous"></script>
+    <!-- JS -->
     <script src="main.js"></script>
     <title>Miranda Nilhags CV</title>
 </head>
 
 <body class="bg-pink-300">
-    <div class="flex flex-col h-screen justify-between">
+    <div class="flex flex-col h-screen justify-between sm:w-16">
         <!-- content wrapper -->
-        <div>
+        <div class="flex flex- border-t-1 m-4 text-pink-500 border-b">
             <nav>
                 <ul>
                     <li>
-                        <a href="#aboutMe"></a>
                         <span>About</span>
                     </li>
                     <li>
-                        <a href="#work"></a>
-                        <span>Work Experience</span>
+                        <span>Work</span>
                     </li>
                     <li>
-                        <a href="#contact"></a>
                         <span>Contact</span>
                     </li>
                 </ul>
             </nav>
         </div> <!-- end nav -->
 
-        <div class="text 4xl text-pink-500">
+        <div class="text-3xl text-pink-500 lg:text-5xl md:text-4xl flex m-4 h-96 my-48">
             <h1>
-                Miranda Nilhag<br>Front-end Developer in making 2023
+                Miranda Nilhag<br><strong>Front End Developer</strong><br>In making 2023
             </h1>
         </div>
 
-        <main class="mb-auto h-10">
+
+        <a href="#main"><i class="fa fa-arrow-down text-pink-500 text-3xl flex mb-20" aria-hidden="true"></i></a>
+            
+       
+        <main class="mb-auto h-10 flex-shrink-0 mx-10">
+
+            <h4 class="text-pink-500"><strong>About</strong></h4>
+            <p class="my-4">I have been working as a full-time tennis umpire since 2013 and have traveled to more than 40 countries
+                around the world. During the pandemic I stayed at home in Gothenburg and fell in love with my home town,
+                I realized how much I enjoy being at home so I started thinking that maybe there are more things than
+                tennis in my life. It was time to try something new. </p>
+            <p class="my-6">In january 2021 I started working for Gelateria Positano as a store manager and chief of staff. It was
+                nice to try something else, I enjoyed meeting costumers and taking care of all employees. However, being
+                responsible for three stores and 20+ employees + working full time in the store was heavy and I could
+                never stop thinking about my job. After a few months I injured my wrist scooping gelato. That's when I
+                knew that this was not the right place for me to be. I began thinking about education and what I wanted
+                to do when I came across Medieinstitutet.</p>
+            <p class="my-6">During my trip to Japan working the 2020 Tokyo Paralympic Games I started to prepare for the next chapter
+                in my life, the road of becoming a Front End Developer.</p>
+
+
+                <h4 class="text-pink-500 p-"><strong>Work</strong></h4>
+            <p class="my-4">Since Im brand new to web development I have not got too much experience yet. However you may take a look
+                at my GiyHub page to check out my projects!</p>
+            <p>I am looking for an Internship for fall 2020.</p>
 
         </main>
-        <footer class="h-10 justify-evenly">
-            <p><i class="fa fa-phone-square text-2xl"></i></a>+46 735-41 56 83</p>
 
-            <p><i class="fa fa-envelope text-2xl" aria-hidden="true"></i><a
-                    href="mailto:miranda.nilhag@medieinstitutet.se">miranda.nilhag<br>@medieinstitutet.se</a></p>
+        <footer class="h-10 md:w-48 lg:w-auto">
+            <div class="flex justify-center border-t-2 m-10">
 
-            <p><i class="fa fa-linkedin-square text-2xl" aria-hidden="true"></i><a
-                    href="https://linkedin.com/in/miranda-nilhag" target="blank">LinkedIn</a></p>
+                <a href="mailto:miranda.nilhag@medieinstitutet.se"><i class="fa fa-envelope text-1xl m-3 text-pink-500"
+                        aria-hidden="true"></i></a>
 
-            <p><i class="fa fa-github-square text-2xl" aria-hidden="true"></i><a
-                    href="https://github.com/mirrenil">GitHub</a></p>
+                <a href="https://linkedin.com/in/miranda-nilhag" target="blank"><i
+                        class="fa fa-linkedin-square text-1xl m-3 text-pink-500" aria-hidden="true"></i></a>
+
+                <a href="https://github.com/mirrenil">
+                    <i class="fa fa-github-square text-1xl m-3 text-pink-500" aria-hidden="true"></i> </a>
+            </div>
         </footer>
     </div>
 </body>
