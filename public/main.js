@@ -17,3 +17,15 @@ let x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+/* function scrollDown() {
+    let arrow = document.getElementById('arrow');
+    arrow.addEventListener('click', function() {
+        window.scrollTo() {
+            top: 700;,
+            left: 700;,
+            behavior: 'smooth';
+        }
+    }
+} */
