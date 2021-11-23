@@ -5,7 +5,15 @@ function main() {
   countDown();
   clickToScroll();
   clickToScrollDown();
+  addEventListeners();
 }
+
+function addEventListeners() {
+  const div = document.getElementById('image-text');
+  div.addEventListener('mouseover', showHiddenText);
+  //div.addEventListener('mouseout', hideHiddenText);
+}
+
 /** This is a function which counts down until graduation */
 function countDown() {
     let countDownDate = new Date("May 31, 2023 12:00:00").getTime();
@@ -44,24 +52,16 @@ function clickToScrollDown() {
     });
     
 }
-
-//function hideImg(contactInfo, img) {
-    let div = document.getElementById(contactInfo);
-    if (div.style.display === "none") {
-        div.style.display = "block";
-        img.src = "/public/assets/IMG_0978.jpeg"
-    } else if (div.style.display === "block") {
-        div.style.display = "none";
-        img.src = "/public/assets/IMG_0978.jpeg"
-    }
+/**
+ * Shows the hidden text behind the img when you put your mouse over.
+ * @param {MouseEvent} event 
+ */
+function showHiddenText(event) {
+  event.target.querySelector('#contactInfo').style.display = 'block';
+  //event.target.querySelector('img').style.visibility = 'hidden';
 }
 
-let showContactInfo = false;
-
-function hideImg() {
-    if (showContactInfo) {
-        img.classList.toggle('visible');
-    } else {
-        img.classList.toggle('visible', i < 0);
-    }
+function hideHiddenText(event) {
+  //event.target.querySelector('#contactInfo').style.display = 'none';
+  event.target.querySelector('img').style.display = 'block';
 }

@@ -18,20 +18,22 @@
 
 <body class="bg-pink-300">
     <div class="flex flex-wrap">
-
+        <!-- link to my contact details at the bottom of the page -->
         <div id="contact">
-        <a href="#footer">
-            <p class="text-pink-500 text-2xl font-mono m-8"><strong>Contact</strong></p>
-        </a> </div>
+            <a href="#footer">
+                <p class="text-pink-500 text-2xl font-mono m-8"><strong>Contact</strong></p>
+            </a>
+        </div>
 
 
-
+        <!-- Countdown until graduation and arrow with bounce animation to scroll down -->
         <div class="font-mono text-3xl text-pink-500 lg:text-5xl md:text-4xl flex justify-center m-4 my-32 h-96 w-full">
             <h1>
                 Miranda Nilhag<br><strong>Front End Developer</strong><br>Ready to hire in<br><a href="#main">
-                    <p class ="font-mono font-bold"id="count-down"></p> <div id="arrow"><i
-                        class="fa fa-arrow-down flex justify-center text-pink-500 text-3xl animate-bounce cursor-pointer mt-72 ml-36"
-                        aria-hidden="true"></i></div>
+                    <p class="font-mono font-bold" id="count-down"></p>
+                    <div id="arrow" class="flex justify-center"><i
+                            class="fa fa-arrow-down text-pink-500 text-3xl animate-bounce cursor-pointer mt-60"
+                            aria-hidden="true"></i></div>
                 </a>
             </h1>
         </div>
@@ -39,10 +41,10 @@
 
 
 
-
+        <!-- Main content -->
         <main class="mb-auto mx-10 w-full" id="main">
 
-            <h4 class="text-pink-500 font-mono mt-20"><strong>About</strong></h4>
+            <h4 class="text-pink-500 font-mono mt-6"><strong>About</strong></h4>
             <p class="my-4 font-mono">Im 26 y/o and live in Gothenburg, Sweden. I am currently studying at
                 Medieinstitutet to become a front end developer.</p>
             <p class="my-2 font-mono">I have been working as a full-time tennis umpire since 2013 and have traveled
@@ -68,33 +70,35 @@
             <p class="my-4 font-mono">Since Im brand new to web development I have not got too much experience yet.
                 However you
                 may take a look
-                at my GiyHub page to check out my projects!</p>
+                at my GitHub page to check out my projects!</p>
             <p class="font-mono mb-4">I am looking for an Internship for fall 2022.</p>
 
             <ul class="font-mono list-disc">
-                <li class="mb-4">2010-2013 - Katrinelundsgymnasiet, <br>Elitidrottsprogrammet  </li>
+                <li class="mb-4">2010-2013 - Katrinelundsgymnasiet, <br>Elitidrottsprogrammet </li>
                 <li class="mb-4">2021-2023 - Medieinstitutet, <br>Front End Developer</li>
             </ul>
-           
-            <div class="flex justify-center">
-            <img class="w-48 h-48 rounded-full mb-4 animate-pulse" src="/public/assets/IMG_0978.jpeg" onmouseover="document.getElementById('contactInfo').style.display='block';" onmouseout="document.getElementById('contactInfo').style.display='none'">
-            <div class="font-mono" id="contactInfo" style="display: none">Miranda Nilhag<br>+46735415683<br>miranda.nilhag@medieinstitutet.se</div>
-        </div>
+            <!-- Image with hidden text, mouse over to reveal the text -->
+            <div id="image-text" class="flex justify-center show-hidden-content">
+                <img class="w-48 h-48 rounded-full mb-4" src="/public/assets/IMG_0978.jpeg">
+                <div class="font-mono" id="contactInfo" style="display: none">Miranda
+                    Nilhag<br>+46735415683<br>miranda.nilhag@medieinstitutet.se</div>
+            </div>
+            <span class="font-mono flex justify-center">Bring your curser over the image to see my contact
+                details!</span>
         </main>
-
+        <!-- footer with icon links to linkedin, github and my email-->
         <footer class="flex w-full border" id="footer">
             <div class="flex justify-evenly m-10 w-full">
 
                 <a href="mailto:miranda.nilhag@medieinstitutet.se"><i class="fa fa-envelope text-2xl m-3 text-pink-500"
                         aria-hidden="true"></i></a>
 
-                <a href="https://linkedin.com/in/miranda-nilhag" target="blank"><i
+                <a href="https://www.linkedin.com/in/miranda-nilhag-68072a105/" target="blank"><i
                         class="fa fa-linkedin-square text-2xl m-3 text-pink-500" aria-hidden="true"></i></a>
 
                 <a href="https://github.com/mirrenil">
                     <i class="fa fa-github-square text-2xl m-3 text-pink-500" aria-hidden="true"></i></a>
             </div>
-
         </footer>
     </div>
 </body>
