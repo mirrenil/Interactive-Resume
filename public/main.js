@@ -8,11 +8,9 @@ function main() {
 }
 /** This is a function which counts down until graduation */
 function countDown() {
-  let countDownDate = new Date("May 31, 2023 12:00:00").getTime();
-
-  let x = setInterval(function () {
+    let countDownDate = new Date("May 31, 2023 12:00:00").getTime();
+    let x = setInterval(function () {
     const now = new Date().getTime();
-
     let distance = countDownDate - now;
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -47,7 +45,7 @@ function clickToScrollDown() {
     
 }
 
-function hideImg(contactInfo, img) {
+//function hideImg(contactInfo, img) {
     let div = document.getElementById(contactInfo);
     if (div.style.display === "none") {
         div.style.display = "block";
@@ -55,5 +53,15 @@ function hideImg(contactInfo, img) {
     } else if (div.style.display === "block") {
         div.style.display = "none";
         img.src = "/public/assets/IMG_0978.jpeg"
+    }
+}
+
+let showContactInfo = false;
+
+function hideImg() {
+    if (showContactInfo) {
+        img.classList.toggle('visible');
+    } else {
+        img.classList.toggle('visible', i < 0);
     }
 }
