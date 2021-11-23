@@ -19,19 +19,19 @@
 <body class="bg-pink-300">
     <div class="flex flex-wrap">
 
-
+        <div id="contact">
         <a href="#footer">
             <p class="text-pink-500 text-2xl font-mono m-8"><strong>Contact</strong></p>
-        </a>
+        </a> </div>
 
 
 
         <div class="font-mono text-3xl text-pink-500 lg:text-5xl md:text-4xl flex justify-center m-4 my-32 h-96 w-full">
             <h1>
                 Miranda Nilhag<br><strong>Front End Developer</strong><br>Ready to hire in<br><a href="#main">
-                    <p class ="font-mono font-bold"id="demo"></p><i
+                    <p class ="font-mono font-bold"id="count-down"></p> <div id="arrow"><i
                         class="fa fa-arrow-down flex justify-center text-pink-500 text-3xl animate-bounce cursor-pointer mt-72 ml-36"
-                        aria-hidden="true" id="arrow"></i>
+                        aria-hidden="true"></i></div>
                 </a>
             </h1>
         </div>
@@ -40,7 +40,7 @@
 
 
 
-        <main class="mb-auto mx-10 w-full">
+        <main class="mb-auto mx-10 w-full" id="main">
 
             <h4 class="text-pink-500 font-mono mt-20"><strong>About</strong></h4>
             <p class="my-4 font-mono">Im 26 y/o and live in Gothenburg, Sweden. I am currently studying at
@@ -77,11 +77,12 @@
             </ul>
            
             <div class="flex justify-center">
-            <img class="w-48 h-48 rounded-full mb-4 animate-pulse" src="/public/assets/IMG_0978.jpeg">
+            <img class="w-48 h-48 rounded-full mb-4 animate-pulse" src="/public/assets/IMG_0978.jpeg" onclick="hideImg('contactInfo'); id="imgHide">
+            <div id="contactInfo" style="display: none">+46735415683</div>
         </div>
         </main>
 
-        <footer class="flex w-full border">
+        <footer class="flex w-full border" id="footer">
             <div class="flex justify-evenly m-10 w-full">
 
                 <a href="mailto:miranda.nilhag@medieinstitutet.se"><i class="fa fa-envelope text-2xl m-3 text-pink-500"
