@@ -12,3 +12,5 @@
 [Demo] ()
 
 **Project by Miranda Nilhag**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97993060-b131-48a7-8d14-e9cf290e46b1/deploy-status)](https://app.netlify.com/sites/xenodochial-boyd-02b3b7/deploys)
