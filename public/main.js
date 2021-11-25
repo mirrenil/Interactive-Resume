@@ -58,10 +58,10 @@ function clickToScrollDown() {
  */
 function showHiddenText(event) {
   event.target.querySelector('#contactInfo').style.display = 'block';
-  event.target.querySelector('img').style.display = 'hidden';
+  //event.target.querySelector('img').style.display = 'hidden';
 }
 
 function hideHiddenText(event) {
   event.target.querySelector('#contactInfo').style.display = 'none';
-  event.target.querySelector('img').style.display = 'block';
+  //event.target.querySelector('img').style.display = 'block';
 }
