@@ -13,4 +13,4 @@
 
 **Project by Miranda Nilhag**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/97993060-b131-48a7-8d14-e9cf290e46b1/deploy-status)](https://app.netlify.com/sites/xenodochial-boyd-02b3b7/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46382690-da6f-47d3-a365-f18b0aa0468c/deploy-status)](https://app.netlify.com/sites/stupefied-hypatia-c11370/deploys)
