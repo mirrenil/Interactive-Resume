@@ -9,7 +9,7 @@
 
 [Repo] (https://github.com/mirrenil/Interactive-Resume)
 
-[Demo] ()
+[Demo] (https://stupefied-hypatia-c11370.netlify.app/)
 
 **Project by Miranda Nilhag**
 
