@@ -14,6 +14,7 @@ function addEventListeners() {
   //div.addEventListener('mouseout', hideHiddenText);
 }
 
+
 /** This is a function which counts down until graduation */
 function countDown() {
     let countDownDate = new Date("May 31, 2023 12:00:00").getTime();
@@ -64,4 +65,12 @@ function showHiddenText(event) {
 function hideHiddenText(event) {
   event.target.querySelector('#contactInfo').style.display = 'none';
   //event.target.querySelector('img').style.display = 'block';
+}
+
+// Trying to make a function whcih will work for iphone users
+
+document.getElementById('image-text').addEventListener('touchstart',touchScreen);
+
+function touchScreen() {
+  document.getElementsById('span').innerHTML = 'Miranda Nilhag +46735415683 miranda.nilhag@medieinstitutet.se';
 }
