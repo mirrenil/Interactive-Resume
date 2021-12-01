@@ -85,15 +85,18 @@
             <!-- Need to fix that the text is visible on mobile device -->
             <!-- Image with hidden text, mouseover to reveal the text -->
             <div id="image-text" class="flex overflow-hidden flex-col">
-                <img class="rounded-full h-24 w-24 mb-4 flex-grow-0 cursor-pointer"
+                <img class="rounded-full h-24 w-24 mb-4 flex-grow-0 cursor-pointer opacity-90"
                     src="https://stupefied-hypatia-c11370.netlify.app/assets/miranda.nilhag.png"
                     alt="Picture of Miranda Nilhag">
-                <div class="font-mono mb-4" id="contactInfo" style="display: none">Miranda
+                <div class="font-mono mb-4 flex xxs:invisible xs:invisible sm:invisible md:visible lg:visible xl:visible" id="contactInfo" style="display: none">Miranda
                     Nilhag<br>+46735415683<br>miranda.nilhag<br>@medieinstitutet.se</div>
-            </div>
-            <span id="span" class="font-mono flex justify-center mb-4 text-xs">Bring your curser over the image to see
+                    <div class="font-mono mb-4 flex xxs:visible xs:visible sm:visible md:invisible lg:invisible xl:invisible" id="contactInfo">Miranda
+                        Nilhag<br>+46735415683<br>miranda.nilhag<br>@medieinstitutet.se</div>
+            
+            <span id="span" class="xxs:invisible xs:invisible md:visible lg:visible xl:visible font-mono flex justify-center mb-4 text-xs">Bring your curser over the image to see
                 my contact
-                details!(iPhone users needs to touch it!)</span>
+                details!</span>
+            </div>
         </main>
         <!-- footer with icon links to linkedin, github and my email-->
         <footer class="flex w-full border" id="footer">

@@ -11,6 +11,8 @@ function main() {
 function addEventListeners() {
   const div = document.getElementById('image-text');
   div.addEventListener('mouseover', showHiddenText);
+  // Hur får jag denna att funka på iphone?
+  div.addEventListener('ontouchmove', showHiddenText);
   //div.addEventListener('mouseout', hideHiddenText);
 }
 
