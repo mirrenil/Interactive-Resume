@@ -60,7 +60,9 @@ function clickToScrollDown() {
  * @param {MouseEvent} event 
  */
 function showHiddenText(event) {
-  event.target.querySelector('#contactInfo').style.display = 'block';
+  const text = event.target.querySelector('#contactInfo');
+  if (!text) return;
+  text.style.display = 'block';
   //event.target.querySelector('img').style.visibility = 'hidden';
 }
 
