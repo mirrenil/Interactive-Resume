@@ -9,9 +9,8 @@ function main() {
 }
 
 function addEventListeners() {
-  const div = document.getElementById('image-text');
-  div.addEventListener('mouseover', showHiddenText);
-  //div.addEventListener('mouseout', hideHiddenText);
+  document.getElementById('contactInfo').addEventListener('mouseover', mouseOver);
+  document.getElementById('contactInfo').addEventListener('mouseout', mouseOut);
 }
 
 
@@ -54,17 +53,16 @@ function clickToScrollDown() {
     
 }
 /**
- * Shows the hidden text behind the img when you put your mouse over.
+ * Changes font size when you mouse over.
  * @param {MouseEvent} event 
  */
-function showHiddenText(event) {
-  const text = event.target.querySelector('#contactInfo');
-  if (!text) return;
-  text.style.display = 'block';
-  //event.target.querySelector('img').style.visibility = 'hidden';
+
+
+ function mouseOver() {
+    document.getElementById("contactInfo").style.fontSize = '125%';
 }
 
-function hideHiddenText(event) {
-  event.target.querySelector('#contactInfo').style.display = 'none';
-  //event.target.querySelector('img').style.display = 'block';
+function mouseOut () {
+    document.getElementById("contactInfo").style.color = '100%';
 }
+
