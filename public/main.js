@@ -33,24 +33,25 @@ function countDown() {
   }, 1000);
 }
 
-/** If you click on Contact the page will scroll down to the footer where my contact info is */
-function clickToScroll() {
+/** If you click the arrow the page scrolls down to the main content */
+function clickToScrollToMain() {
+
+  const arrow = document.querySelector("main");
+
+  arrow.addEventListener('click', function() {
+      window.scrollTo({behavior: "smooth"});
+  });
+  
+}
+
+/** If you click on Contact in the left corner the page will scroll down to the footer */
+function clickToScrollToFooter() {
 
   const contact = document.querySelector("footer");
 
   contact.addEventListener('click', function() {
     window.scrollTo({behavior: "smooth"});
   });
-}
-/** If you click the arrow the page scrolls down to the main content */
-function clickToScrollDown() {
-
-    const arrow = document.querySelector("main");
-
-    arrow.addEventListener('click', function() {
-        window.scrollTo({behavior: "smooth"});
-    });
-    
 }
 /**
  * Changes font size when you mouse over.
