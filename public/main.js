@@ -3,8 +3,8 @@ window.addEventListener('load', main);
 /** Program starts */
 function main() {
   countDown();
-  clickToScroll();
-  clickToScrollDown();
+  clickToScrollToFooter();
+  clickToScrollToMain();
   addEventListeners();
 }
 
