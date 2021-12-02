@@ -56,8 +56,6 @@ function clickToScrollDown() {
  * Changes font size when you mouse over.
  * @param {MouseEvent} event 
  */
-
-
  function mouseOver() {
     document.getElementById("contactInfo").style.fontSize = '150%';
 }
