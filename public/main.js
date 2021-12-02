@@ -71,8 +71,9 @@ function hideHiddenText(event) {
 
 // Trying to make a function whcih will work for iphone users
 
-document.getElementById('#image-text').addEventListener('touchstart',touchScreen);
+
 
 function touchScreen() {
+  //document.getElementById('#image-text').addEventListener('touchstart',touchScreen);
   document.getElementsById('#span').innerHTML = 'Miranda Nilhag +46735415683 miranda.nilhag@medieinstitutet.se';
 }
