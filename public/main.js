@@ -11,8 +11,6 @@ function main() {
 function addEventListeners() {
   const div = document.getElementById('image-text');
   div.addEventListener('mouseover', showHiddenText);
-  // Hur får jag denna att funka på iphone?
-  div.addEventListener('ontouchmove', showHiddenText);
   //div.addEventListener('mouseout', hideHiddenText);
 }
 
@@ -69,13 +67,4 @@ function showHiddenText(event) {
 function hideHiddenText(event) {
   event.target.querySelector('#contactInfo').style.display = 'none';
   //event.target.querySelector('img').style.display = 'block';
-}
-
-// Trying to make a function whcih will work for iphone users
-
-
-
-function touchScreen() {
-  //document.getElementById('#image-text').addEventListener('touchstart',touchScreen);
-  document.getElementsById('#span').innerHTML = 'Miranda Nilhag +46735415683 miranda.nilhag@medieinstitutet.se';
 }
