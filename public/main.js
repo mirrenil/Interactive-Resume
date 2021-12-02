@@ -59,7 +59,7 @@ function clickToScrollDown() {
 
 
  function mouseOver() {
-    document.getElementById("contactInfo").style.fontSize = '125%';
+    document.getElementById("contactInfo").style.fontSize = '150%';
 }
 
 function mouseOut () {
