@@ -8,7 +8,7 @@ I hope you like it!
 
 [Repo] (https://github.com/mirrenil/Interactive-Resume)
 
-[Demo] (https://stupefied-hypatia-c11370.netlify.app/)
+[Demo] (https://mirandanilhag.netlify.app/)
 
 **Project by Miranda Nilhag**
 
